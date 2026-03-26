@@ -1,0 +1,37 @@
+### 🔹 Get all users
+GET http://localhost:3000/users
+
+
+### 🔹 Get users with search
+GET http://localhost:3000/users?search=shiv
+
+
+### 🔹 Get users sorted
+GET http://localhost:3000/users?sort=name&order=asc
+
+
+### 🔹 Get user by ID
+GET http://localhost:3000/users/42ab59e3-debe-4984-8e74-ce0de66490e0
+
+
+### 🔹 Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "tanu",
+  "email": "tanu@gmail.com"
+}
+
+
+### 🔹 Update user
+PUT http://localhost:3000/users/a0b5ee74-8d59-4b43-b3f0-b7b9dc4db3c4
+Content-Type: application/json
+
+{
+  "name": "khushi kaushik"
+}
+
+
+### 🔹 Delete user
+DELETE http://localhost:3000/users/PUT_YOUR_ID_HERE
